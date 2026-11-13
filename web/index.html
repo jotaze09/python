@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <h1 class="titulo">Jogo da velha</h1>
+
+    <p class="status status--{{status_tipo}}">{{status}}</p>
+
+    <div class="tabuleiro">
+        {{casas}}
+    </div>
+
+    <div class="acoes">
+      <form method="post" action="/reiniciar">
+        <button class="botao botao--primario" type="submit">Nova partida</button>
+      </form>
+    </div>
+
+    <p class="legenda">X come&ccedil;a. Clique em uma casa vazia para jogar.</p>
+  </main>
+</body>
+</html>
