@@ -20,7 +20,35 @@
       <form method="post" action="/reiniciar">
         <button class="botao botao--primario" type="submit">Nova partida</button>
       </form>
+      <form method="post" action="/modo">
+        <input type="hidden" name="modo" value="{{proximo_modo}}">
+        <button class="botao" type="submit">{{rotulo_modo}}</button>
+      </form>
     </div>
+
+    <table class="placar">
+      <caption>Tabela de classifica&ccedil;&atilde;o</caption>
+      <thead>
+        <tr>
+          <th scope="col">Jogador</th>
+          <th scope="col">Vit&oacute;rias</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">X</th>
+          <td>{{vitorias_x}}</td>
+        </tr>
+        <tr>
+          <th scope="row">O</th>
+          <td>{{vitorias_o}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Empates</th>
+          <td>{{empates}}</td>
+        </tr>
+      </tbody>
+    </table>
 
     <p class="legenda">X come&ccedil;a. Clique em uma casa vazia para jogar.</p>
   </main>

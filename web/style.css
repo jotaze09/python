@@ -129,6 +129,39 @@ body {
   background: #333;
 }
 
+.placar {
+  width: 100%;
+  margin-top: 18px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.placar caption {
+  padding-bottom: 6px;
+  font-size: 0.78rem;
+  text-align: left;
+  color: #666;
+}
+
+.placar th,
+.placar td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  font-weight: 400;
+}
+
+.placar thead th {
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+}
+
+.placar thead th:last-child,
+.placar td {
+  text-align: right;
+  font-weight: 600;
+}
+
 .legenda {
   margin: 14px 0 0;
   font-size: 0.78rem;
